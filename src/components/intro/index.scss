@@ -135,7 +135,9 @@
     }
 }
 
-@media screen and (max-width: 460px) {
+
+
+@media screen and (max-width: 470px) {
     .intro-left{
         h1{
             font-size: 3.5rem;
@@ -146,7 +148,7 @@
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
     .intro-left{
         h1{
             font-size: 3rem;
@@ -162,5 +164,11 @@
         svg{
             width: 300px; 
         }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .container{
+        margin-left: 0.5rem;
     }
 }

@@ -18,7 +18,9 @@ function NavBar() {
 
     useEffect(() => {
         const changeMenuState = () => {
-            return setMenu(false)
+            if (Number(window.innerHeight) > 770) {
+                return setMenu(false)
+            }
         }
         window.addEventListener('resize', changeMenuState)
     }, [menu])

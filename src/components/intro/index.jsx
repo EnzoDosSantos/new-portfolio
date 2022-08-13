@@ -43,7 +43,7 @@ function Intro() {
           <AnimatedLetters letterClass={letterClass} strArray={jobArr} idx={30} />
         </h1>
         <h2>Frontend Developer / Backend Developer / FullStack Developer</h2>
-        <a href='#' className='intro-button'>Contactame</a>
+        <a href='https://www.linkedin.com/in/enzods/' className='intro-button'>Contactame</a>
       </div>
       <div className='intro-right'>
         <Logo/>
