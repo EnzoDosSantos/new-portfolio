@@ -1,6 +1,6 @@
 
 import AnimatedLetters from '../animatedLetters'
-import {ReactComponent as Logo} from "../../assets/images/eso.svg";
+import {ReactComponent as Logo} from "../../assets/images/logo.svg";
 import { useState, useEffect } from 'react'
 import anime from 'animejs';
 import './index.scss'
