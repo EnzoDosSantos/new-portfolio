@@ -1,0 +1,67 @@
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+  }
+  
+  .text-animate-hover {
+    display: inline-block;
+    min-width: 10px;
+    animation-fill-mode: both;
+  
+    &:hover {
+      animation: rubberBand 1s;
+      color: #ffd700;
+    }
+  }
+  
+  @for $i from 1 through 35 {
+    .text-animate._#{$i} {
+      animation-delay: #{$i / 35}s;
+    }
+  }
+
+  .text-animate-hover._8{
+    margin-left: 1rem;
+  }
+  
+  .text-animate-hover._15{
+    margin-left: 1rem;
+  }
+  
+  .text-animate-hover._18{
+    margin-right: 1rem;
+  }
+  
+  .text-animate-hover._21{
+    margin-right: 1rem;
+  }
+  
+  .text-animate-hover._32{
+    margin-right: 1rem;
+  }
+
+
+  .text-animate._8{
+    margin-left: 1rem;
+  }
+  
+  .text-animate._15{
+    margin-left: 1rem;
+  }
+  
+  .text-animate._18{
+    margin-right: 1rem;
+  }
+  
+  .text-animate._21{
+    margin-right: 1rem;
+  }
+  
+  .text-animate._32{
+    margin-right: 1rem;
+  }
