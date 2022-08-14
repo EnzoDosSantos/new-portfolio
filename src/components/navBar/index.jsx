@@ -1,21 +1,10 @@
-import BurguerButton from './burguerMenu';
 import { useState, useEffect } from 'react'
+import { NavLink } from "react-router-dom";
+import BurguerButton from './burguerMenu';
 import './index.scss';
 
 function NavBar() {
-    const [isOpen, setIsOpen] = useState(false)
     const [menu, setMenu] = useState(false)
-
-    useEffect(() => {
-        const changeNavbarState = () => {
-            if (Number(window.scrollY) >= 70) {
-                return setIsOpen(true)
-            }
-            return setIsOpen(false)
-        }
-        window.addEventListener('scroll', changeNavbarState)
-    }, [])
-
     useEffect(() => {
         const changeMenuState = () => {
             if (Number(window.innerHeight) > 770) {
@@ -28,27 +17,43 @@ function NavBar() {
     const name = '<EnzoDS />'
 
     return (
-        <nav className={isOpen ? 'nav-bar active' : 'nav-bar'}>
+        <nav className='nav-bar'>
             <div className='nav-bar__logo'>
                 <h1>{name}</h1>
             </div>
             <div className='nav-bar__links'>
-                <span>Home</span>
-                <span>Sobre mi</span>
-                <span>Proyectos</span>
-                <span>Tecnologias</span>
-                <span>Contacto</span>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/a'>Sobre mi</NavLink>
+                <NavLink to='/a'>Proyectos</NavLink>
+                <NavLink to='/a'>Tecnologias</NavLink>
+                <NavLink to='/a'>Contacto</NavLink>
             </div>
             <div className='nav-bar__burger'>
-                <BurguerButton change={isOpen} clicked={menu} handleClick={() => setMenu(!menu)} />
+                <BurguerButton clicked={menu} handleClick={() => setMenu(!menu)} />
             </div>
-            <div className={!isOpen ? 'nav-bar__menu-dark' : 'nav-bar__menu-gray'}>
+            <div className='nav-bar__menu-dark'>
                 <div className={`nav-bar__menu ${menu ? 'active-menu' : ''}`}>
-                    <span>Home</span>
-                    <span>Sobre mi</span>
-                    <span>Proyectos</span>
-                    <span>Tecnologias</span>
-                    <span>Contacto</span>
+                    <div className="context">
+                        <NavLink to='/'>Home</NavLink>
+                        <NavLink to='/'>Sobre mi</NavLink>
+                        <NavLink to='/'>Proyectos</NavLink>
+                        <NavLink to='/'>Tecnologias</NavLink>
+                        <NavLink to='/'>Contacto</NavLink>
+                    </div>
+                    <div className="area" >
+                        <ul className="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div >
                 </div>
             </div>
         </nav>

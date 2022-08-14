@@ -1,13 +1,16 @@
+import { Routes, Route } from "react-router-dom";
 import NavBar from './components/navBar';
-import './App.scss'
 import Intro from './components/intro';
+import './App.scss';
 
 function App() {
 
   return (
     <div className="App">
-      <NavBar/>
-      <Intro/>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Intro />} />
+      </Routes>
     </div>
   )
 }

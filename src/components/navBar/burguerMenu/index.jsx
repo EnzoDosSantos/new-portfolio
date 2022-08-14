@@ -1,8 +1,8 @@
 import './index.scss'
 
-function BurguerButton({handleClick, change, clicked}) {
+function BurguerButton({handleClick, clicked}) {
     return (
-      <div className={change? 'burger-yellow' : 'burger-white'}>
+      <div className='burger-white'>
         <div  onClick={handleClick} 
               className={`nav-icon-5 ${clicked ? 'open' : ''}`}>
           <span></span>
