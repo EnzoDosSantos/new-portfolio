@@ -34,11 +34,11 @@ function NavBar() {
             <div className='nav-bar__menu-dark'>
                 <div className={`nav-bar__menu ${menu ? 'active-menu' : ''}`}>
                     <div className="context">
-                        <NavLink to='/'>Home</NavLink>
-                        <NavLink to='/about'>Sobre mi</NavLink>
-                        <NavLink to='/'>Proyectos</NavLink>
-                        <NavLink to='/'>Tecnologias</NavLink>
-                        <NavLink to='/'>Contacto</NavLink>
+                        <NavLink onClick={() => setMenu(!menu)} to='/'>Home</NavLink>
+                        <NavLink onClick={() => setMenu(!menu)} to='/about'>Sobre mi</NavLink>
+                        <NavLink onClick={() => setMenu(!menu)} to='/'>Proyectos</NavLink>
+                        <NavLink onClick={() => setMenu(!menu)} to='/'>Tecnologias</NavLink>
+                        <NavLink onClick={() => setMenu(!menu)} to='/'>Contacto</NavLink>
                     </div>
                     <div className="area" >
                         <ul className="circles">
