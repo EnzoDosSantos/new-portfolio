@@ -23,7 +23,7 @@ function NavBar() {
             </div>
             <div className='nav-bar__links'>
                 <NavLink to='/'>Home</NavLink>
-                <NavLink to='/a'>Sobre mi</NavLink>
+                <NavLink to='/about'>Sobre mi</NavLink>
                 <NavLink to='/a'>Proyectos</NavLink>
                 <NavLink to='/a'>Tecnologias</NavLink>
                 <NavLink to='/a'>Contacto</NavLink>
@@ -35,7 +35,7 @@ function NavBar() {
                 <div className={`nav-bar__menu ${menu ? 'active-menu' : ''}`}>
                     <div className="context">
                         <NavLink to='/'>Home</NavLink>
-                        <NavLink to='/'>Sobre mi</NavLink>
+                        <NavLink to='/about'>Sobre mi</NavLink>
                         <NavLink to='/'>Proyectos</NavLink>
                         <NavLink to='/'>Tecnologias</NavLink>
                         <NavLink to='/'>Contacto</NavLink>

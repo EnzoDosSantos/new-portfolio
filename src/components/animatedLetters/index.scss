@@ -5,12 +5,12 @@
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    min-width: 10px;
+    // min-width: 10px;
   }
   
   .text-animate-hover {
     display: inline-block;
-    min-width: 10px;
+    // min-width: 10px;
     animation-fill-mode: both;
   
     &:hover {
@@ -19,9 +19,9 @@
     }
   }
   
-  @for $i from 1 through 35 {
+  @for $i from 1 through 100 {
     .text-animate._#{$i} {
-      animation-delay: #{$i / 35}s;
+      animation-delay: #{$i / 100}s;
     }
   }
 
@@ -45,6 +45,42 @@
     margin-right: 1rem;
   }
 
+  .text-animate-hover._42{
+    margin-left: 1rem;
+  }
+
+  .text-animate-hover._48{
+    margin-left: 1rem;
+  }
+
+  .text-animate-hover._50{
+    margin-left: 1rem;
+  }
+
+  .text-animate-hover._54{
+    margin-left: 1rem;
+  }
+
+  .text-animate-hover._60{
+    margin-left: 1rem;
+  }
+
+  .text-animate-hover._62{
+    margin-left: 1rem;
+  }
+
+
+  .text-animate-hover._73{
+    margin-left: 1rem;
+  }
+  
+  .text-animate-hover._84{
+    margin-left: 1rem;
+  }
+
+  .text-animate-hover._85{
+    margin-left: 1rem;
+  }
 
   .text-animate._8{
     margin-left: 1rem;
@@ -64,4 +100,41 @@
   
   .text-animate._32{
     margin-right: 1rem;
+  }
+
+  .text-animate._42{
+    margin-left: 1rem;
+  }
+
+  .text-animate._48{
+    margin-left: 1rem;
+  }
+
+  .text-animate._50{
+    margin-left: 1rem;
+  }
+
+  .text-animate._54{
+    margin-left: 1rem;
+  }
+
+  .text-animate._60{
+    margin-left: 1rem;
+  }
+
+  .text-animate._62{
+    margin-left: 1rem;
+  }
+
+
+  .text-animate._73{
+    margin-left: 1rem;
+  }
+  
+  .text-animate._84{
+    margin-left: 1rem;
+  }
+
+  .text-animate._85{
+    margin-left: 1rem;
   }
