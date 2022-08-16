@@ -47,13 +47,19 @@ function About() {
         <h1>
           <AnimatedLetters letterClass={letterClass} strArray={firtsTitle} idx={40} />
         </h1>
-        <h2>Soy Enzo, de Argentina, Corrientes, tengo 20 años y soy un
-       desarrollador Full Stack graduado del bootcampt de Soy Henry, 
-        siempre estoy viendo cosas nuevas tales como tecnologias, diseños,
-        frameworks, librerías y demas cosas para poder mejorarme y mejorar. </h2> 
-        <div>
-
-        </div>
+        <h2 className='first-text'>Soy Enzo, de Argentina, Corrientes, tengo 19 años y soy un
+        desarrollador Full Stack graduado del bootcampt de Soy Henry.
+        </h2> 
+        <h2 className='second-text'>          
+        Me apasiona el Front End por lo cual siempre estoy en busca de mejorar mis habilidades y es por ello
+        que me esfuerzo cada día por dar lo mejor de mi. 
+        </h2>
+        <h2 className='third-text'>
+        Me encanta aprender nuevas tecnologías y cuento con flexibilidad para trabajar en distintos grupos y proyectos.
+        </h2>
+        <h2 className='fourth-text'>
+        Me gusta el footbol, el cine de suspenso, escuchar música y poder disfrutar junto con las personas que amo y mis mascotas.
+        </h2>
       </div>
       <div className="about-right">
         <h1>
