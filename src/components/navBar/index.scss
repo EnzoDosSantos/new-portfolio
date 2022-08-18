@@ -64,7 +64,7 @@
         a{
             color: #f5f5f5;
             font-size: 4rem;
-            margin-top: 9rem;
+            margin-top: 15rem;
         }
     }
 }
@@ -230,5 +230,11 @@
 @media screen and (max-width: 380px) {
     .nav-bar__logo{
         margin-right: -4rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nav-bar__logo{
+        margin-right: -5rem;
     }
 }

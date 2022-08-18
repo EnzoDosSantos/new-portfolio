@@ -24,8 +24,7 @@ function NavBar() {
             <div className='nav-bar__links'>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/about'>Sobre mi</NavLink>
-                <NavLink to='/a'>Proyectos</NavLink>
-                <NavLink to='/a'>Tecnologias</NavLink>
+                <NavLink to='/proyects'>Proyectos</NavLink>
                 <NavLink to='/a'>Contacto</NavLink>
             </div>
             <div className='nav-bar__burger'>
@@ -36,8 +35,7 @@ function NavBar() {
                     <div className="context">
                         <NavLink onClick={() => setMenu(!menu)} to='/'>Home</NavLink>
                         <NavLink onClick={() => setMenu(!menu)} to='/about'>Sobre mi</NavLink>
-                        <NavLink onClick={() => setMenu(!menu)} to='/'>Proyectos</NavLink>
-                        <NavLink onClick={() => setMenu(!menu)} to='/'>Tecnologias</NavLink>
+                        <NavLink onClick={() => setMenu(!menu)} to='/proyects'>Proyectos</NavLink>
                         <NavLink onClick={() => setMenu(!menu)} to='/'>Contacto</NavLink>
                     </div>
                     <div className="area" >
