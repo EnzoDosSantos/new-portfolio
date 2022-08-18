@@ -4,6 +4,7 @@ import {ReactComponent as Logo} from "../../assets/images/logo.svg";
 import { useState, useEffect } from 'react'
 import anime from 'animejs';
 import './index.scss'
+import { NavLink } from 'react-router-dom';
 
 function Intro() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -43,7 +44,7 @@ function Intro() {
           <AnimatedLetters letterClass={letterClass} strArray={jobArr} idx={30} />
         </h1>
         <h2>Frontend Developer / Backend Developer / FullStack Developer</h2>
-        <a href='https://www.linkedin.com/in/enzods/' className='intro-button'>Contactame</a>
+        <NavLink to='/contact' className='intro-button'>Contactame</NavLink>
       </div>
       <div className='intro-right'>
         <Logo/>

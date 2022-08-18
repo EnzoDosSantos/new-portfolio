@@ -13,7 +13,7 @@
     height: 400px;
     margin: 40px;
     border-radius: 20px;
-    background-color: gray;
+    background-color: #2f2c79;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
     transform-style: preserve-3d;
 }
@@ -24,7 +24,7 @@
     left: 15%;
     z-index: 1;
     transform-style: preserve-3d;
-    transform: translate3d(0,0,20px);
+    transform: translate3d(0,0,30px);
 }
 
 .card .card-title{
@@ -60,6 +60,7 @@
         color: #ffd700;
     }
 }
+
 
 @media screen and (max-width: 1250px) {
     .container-card{
