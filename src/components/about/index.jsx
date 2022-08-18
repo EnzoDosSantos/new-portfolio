@@ -58,7 +58,7 @@ function About() {
         Me encanta aprender nuevas tecnologías y cuento con flexibilidad para trabajar en distintos grupos y proyectos.
         </h2>
         <h2 className='fourth-text'>
-        Me gusta el footbol, el cine de suspenso, escuchar música y poder disfrutar junto con las personas que amo y mis mascotas.
+        Me gusta el futbol, el cine de suspenso, escuchar música y poder disfrutar junto con las personas que amo y mis mascotas.
         </h2>
       </div>
       <div className="about-right">
