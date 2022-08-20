@@ -3,8 +3,8 @@ import AnimatedLetters from '../animatedLetters'
 import {ReactComponent as Logo} from "../../assets/images/logo.svg";
 import { useState, useEffect } from 'react'
 import anime from 'animejs';
-import './index.scss'
 import { NavLink } from 'react-router-dom';
+import './index.scss'
 
 function Intro() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -35,7 +35,7 @@ function Intro() {
 
 
   return (
-    <div className='container'>
+    <section className='container'>
       <div className='intro-left'>
         <h1>
           <AnimatedLetters letterClass={letterClass} strArray={hiArr} idx={1} /> <br /> <AnimatedLetters letterClass={letterClass} strArray={imArr} idx={6} />
@@ -49,7 +49,7 @@ function Intro() {
       <div className='intro-right'>
         <Logo/>
       </div>
-    </div>
+    </section>
   )
 }
 

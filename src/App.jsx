@@ -3,6 +3,7 @@ import NavBar from './components/navBar';
 import Intro from './components/intro';
 import About from './components/about';
 import Proyects from "./components/proyects";
+import Contact from "./components/contact";
 import './App.scss';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" element={<Intro />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/proyects" element={<Proyects />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </div>
   )

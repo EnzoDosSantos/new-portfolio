@@ -42,7 +42,7 @@ function About() {
   const secondTitle = ['M', 'i', 's', 't', 'e', 'c', 'n', 'o', 'l', 'o', 'g', 'i', 'a', 's', 'y', 'h', 'e', 'r', 'r', 'a', 'm', 'i', 'e', 'n', 't', 'a', 's']
 
   return (
-    <div className="container-about">
+    <section className="container-about">
       <div className="about-left">
         <h1>
           <AnimatedLetters letterClass={letterClass} strArray={firtsTitle} idx={40} />
@@ -77,7 +77,7 @@ function About() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

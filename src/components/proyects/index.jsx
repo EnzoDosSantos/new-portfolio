@@ -23,7 +23,7 @@ function Proyects() {
 
 
   return (
-    <div className="conteiner-cards">
+    <section className="conteiner-cards">
         <div className="conteiner-cards-left">
             <h1>Mis proyectos</h1>
             <span>En esta sección tendras acceso a una lista de mis proyectos destacados. <br/></span>
@@ -45,7 +45,7 @@ function Proyects() {
                 })
             }
             </div>
-    </div>
+    </section>
   )
 }
 
