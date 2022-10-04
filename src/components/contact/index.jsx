@@ -50,6 +50,7 @@ function Contact() {
         if (Object.keys(errors).length > 0) {
             return toast.error("Por favor complete todos los campos.")
         }
+        console.log(e.target)
         emailjs.sendForm('service_lx6nkoo', 'template_h5q99uw', e.target, 'bNXGT0sYRezR-bTZJ')
             .then((result) => {
                 toast(
