@@ -1,5 +1,6 @@
 import appGamery from '../../assets/images/App_Gamery.png'
 import scriptMusic from '../../assets/images/Script_Music.png'
+import netflix from '../../assets/images/Netflix_clone.png'
 import Card from '../card'
 import './index.scss'
 
@@ -18,7 +19,15 @@ function Proyects() {
         description: 'App Gamery es una SPA donde se puede ver información de más de 100 juegos.',
         image: appGamery,
         link: 'https://github.com/EnzoDosSantos/PI-VideoGames'
+    },
+    {
+        title: 'Netflix clone',
+        id: 3,
+        description: "Netflix clone es una SPA que imita la página de Netflix.",
+        image: netflix,
+        link: "https://netflix-clone-eight-smoky.vercel.app/"
     }
+
 ]
 
 
